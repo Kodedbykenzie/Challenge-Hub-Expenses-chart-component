@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+:root {
+    --clr-body-bg: hsl(27, 66%, 92%);
+    --clr-header-bg: hsl(10, 79%, 65%);
+    --clr-main-bg: hsl(33, 100%, 98%);
+    --clr-red-dark: hsl(10, 79%, 65%);
+    --clr-red-light: hsl(10, 75%, 72%);
+    --clr-cyan-dark: hsl(186, 34%, 60%);
+    --clr-cyan-light: hsl(186, 56%, 75%);
+    --clr-brown-dark: hsl(25, 47%, 15%);
+    --clr-brown-light: hsl(28, 10%, 53%);
+    --clr-white: hsl(33, 100%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--clr-body-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    font-weight: 400;
+    font-size: 1.125em;
+}
+
+header {
+    background-color: var(--clr-header-bg);
+    color: var(--clr-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-radius: 0.5em;
+    width: 90%;
+}
+
+.logo {
+    height: 70%;
+}
+
+.balance__amount {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+main {
+    background-color: var(--clr-main-bg);
+    color: var(--clr-brown-dark);
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+    margin: 1em;
+    border-radius: 0.5em;
+    width: 90%;
+}
+
+.spending__overview {
+    padding: 1em 0;
+}
+
+.spending__overview-title {
+    font-size: 1.125em;
+}
+
+.spending__overview-chart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.day {
+    color: var(--clr-brown-light);
+    font-size: 0.65em;
+}
+
+.divider {
+    border: 1px solid var(--clr-body-bg);
+}
+
+.spending__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+    line-height: 1.5;
+}
+
+.spending__current-text,
+.spending__previous-text {
+    color: var(--clr-brown-light);
+    font-size: 1em;
+}
+
+.spending__current-amount,
+.spending__previous-procent {
+    color: var(--clr-brown-dark);
+    font-weight: 700;
+}
+
+.spending__current-amount {
+    font-size: 1.5em;
+}
+
+.spending__previous {
+    text-align: right;
+    font-size: 0.8em;
+}
+
+footer {
+    font-size: 0.7em;
+    margin: 1em;
+}
